@@ -1,0 +1,18 @@
+<div class='panel panel-default'>
+  <div class='panel-heading'>
+    <h2>Navigation</h2>
+  </div>
+  <ul class='list-group'>
+    <%- %w( cluster person activity ).each do |resource| %>
+      <li class='list-group-item'>
+        <h3>
+          <%= resource.titleize %>
+          <%= link_to [:admin, resource.downcase.pluralize], :class => 'btn btn-primary pull-right' do %>
+            Manage
+            <span class='badge badge-success'><%= resource.camelcase.constantize.count %></span>
+          <% end %>
+        </h3>
+      </li>
+    <% end %>
+  </ul>
+</div>

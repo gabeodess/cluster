@@ -1,0 +1,2 @@
+class StudyCircle < Activity
+end

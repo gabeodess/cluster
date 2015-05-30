@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
+ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -43,3 +44,9 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'factory_girl_rails'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'puma'
+gem 'devise'

@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+//= require bootstrap-sprockets
+  
+// IE10 viewport hack for Surface/desktop Windows 8 bug  
+//= require ie10-viewport-bug-workaround
